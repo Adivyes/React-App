@@ -3,12 +3,14 @@ import './Hero.css'
 
 export default function Hero(props) {
     let [heroBtn, setHeroBtn] = useState(false)
+
     let {heroName, heroAge, heroPower, heroImeg} = props
     
     function heroBtnFunction (){
         setHeroBtn(heroState => !heroState)
     }
     return (
+        
         <div id = "heroDivId">
             
             <img src={heroImeg} />
@@ -21,7 +23,7 @@ export default function Hero(props) {
             </div>
                 :
             <div id = "toggelDivOf">
-                <h3>Click the button for Informetion</h3>
+                <h3>Click the button for informetion</h3>
             </div>
             }
         </div>
